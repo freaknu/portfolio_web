@@ -219,23 +219,6 @@ const Hero = () => {
                                 </motion.div>
                             </motion.div>
                             
-                            {/* Floating badge */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0, x: 20 }}
-                                animate={{ opacity: 1, scale: 1, x: 0 }}
-                                transition={{ delay: 1.5, type: "spring" }}
-                                className="absolute -bottom-3 -left-3 bg-neutral-900 border border-green-500/50 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg z-30"
-                            >
-                                <motion.span
-                                    className="flex items-center gap-2"
-                                    animate={{ scale: [1, 1.05, 1] }}
-                                    transition={{ duration: 2, repeat: Infinity }}
-                                >
-                                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                                    Open to Work
-                                </motion.span>
-                            </motion.div>
-                            
                             {/* Experience badge */}
                             <motion.div
                                 initial={{ opacity: 0, scale: 0, x: -20 }}
